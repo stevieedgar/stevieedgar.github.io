@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stevie Mobue | Élève Ingénieur Data</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root { --primary: #2c3e50; --accent: #3498db; --bg: #f8f9fa; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; margin: 0; background: var(--bg); }
+        .container { max-width: 900px; margin: auto; padding: 20px; }
+        
+        header { text-align: center; padding: 50px 0; background: var(--primary); color: white; border-radius: 0 0 20px 20px; }
+        header h1 { margin: 0; font-size: 2.5em; }
+        .contact-links { margin-top: 15px; }
+        .contact-links a { color: white; margin: 0 10px; text-decoration: none; font-size: 1.1em; }
+
+        .section { margin: 40px 0; }
+        h2 { border-bottom: 2px solid var(--accent); padding-bottom: 10px; color: var(--primary); }
+
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+        .card { background: white; padding: 20px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: 0.3s; display: flex; flex-direction: column; justify-content: space-between; }
+        .card:hover { transform: translateY(-5px); }
+        .card h3 { margin-top: 0; color: var(--accent); }
+        
+        .tag { background: #e1f5fe; color: #0288d1; padding: 4px 10px; border-radius: 15px; font-size: 0.85em; font-weight: bold; margin-right: 5px; margin-bottom: 5px; display: inline-block; }
+        .btn { display: inline-block; margin-top: 15px; padding: 8px 15px; background: var(--accent); color: white; text-decoration: none; border-radius: 5px; text-align: center; }
+        
+        .skills-list { display: flex; flex-wrap: wrap; gap: 10px; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Stevie Mobue</h1>
+    <p>Élève Ingénieur Data (BI & Analytics) | CY Tech</p>
+    <div class="contact-links">
+        <a href="mailto:stevieefangon@gmail.com"><i class="fas fa-envelope"></i> Email</a>
+        <a href="https://linkedin.com/in/stevie-mobue" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        <a href="https://github.com/stevieedgar" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+    </div>
+</header>
+
+<div class="container">
+    <section class="section">
+        <h2>À propos</h2>
+        <p>Étudiant ingénieur en Business Intelligence & Analytics à CY Tech avec un Master en Intelligence Artificielle. Expert dans la transformation de données brutes en leviers décisionnels, je maîtrise le cycle complet de la donnée.</p>
+    </section>
+
+    <section class="section">
+        <h2>Compétences Clés</h2>
+        <div class="skills-list">
+            <span class="tag">SQL / ETL</span> <span class="tag">Python (Pandas, Scikit-learn)</span>
+            <span class="tag">Jedox (EPM/BI)</span> <span class="tag">Power BI (DAX)</span>
+            <span class="tag">SAS Visual Analytics</span> <span class="tag">Machine Learning</span>
+            <span class="tag">Docker & Kafka</span>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2>Projets en vedette</h2>
+        <div class="grid">
+            <div class="card">
+                <div>
+                    <h3>Ecolonergie | Suivi de Rentabilité</h3>
+                    <p>Automatisation du suivi financier et de l'avancement des projets via <strong>Jedox</strong>. Remplacement d'un système Excel par une solution centralisée pour la direction financière.</p>
+                    <span class="tag">Jedox</span> <span class="tag">Automation</span> <span class="tag">Finance BI</span>
+                </div>
+                <a href="https://github.com/stevieedgar/Projet-Jedox" class="btn" target="_blank">Voir le projet</a>
+            </div>
+
+            <div class="card">
+                <div>
+                    <h3>Performance Hôtelière (IDF)</h3>
+                    <p>Modélisation de données et création de KPI complexes (CA cumulé, capacité) via DAX pour analyser la performance hôtelière en Île-de-France.</p>
+                    <span class="tag">Power BI</span> <span class="tag">DAX</span>
+                </div>
+                <a href="https://github.com/stevieedgar/Projet-PBI-Hotels" class="btn" target="_blank">Voir le projet</a>
+            </div>
+
+            <div class="card">
+                <div>
+                    <h3>Analyse Insight Toy Company</h3>
+                    <p>Analyse des ventes et de la satisfaction client via SAS Visual Analytics. Mise en place de modèles prédictifs pour le ROI.</p>
+                    <span class="tag">SAS</span> <span class="tag">Machine Learning</span>
+                </div>
+                <a href="https://github.com/stevieedgar/Projet-SAS" class="btn" target="_blank">Voir le projet</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2>Formation</h2>
+        <p><strong>CY Tech</strong> - Ingénieur BI & Analytics (2024 - Présent)</p>
+        <p><strong>Université IBN Tofail</strong> - Master Intelligence Artificielle (2022 - 2024)</p>
+        <p><strong>Université IBN Tofail</strong> - Licence Mathématiques et Informatique (2020 - 2023)</p>
+    </section>
+</div>
+
+</body>
+</html>
