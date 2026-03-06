@@ -6,33 +6,33 @@
     <title>Stevie Mobue | Ingénieur Data & IA</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        :root { --primary: #2c3e50; --accent: #3498db; --bg: #f8f9fa; --text: #333; }
+        :root { --primary: #2c3e50; --accent: #3498db; --bg: #f8f9fa; --text: #333; --status: #27ae60; }
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: var(--text); margin: 0; background: var(--bg); }
         .container { max-width: 950px; margin: auto; padding: 20px; }
         
         header { text-align: center; padding: 60px 20px; background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%); color: white; border-radius: 0 0 30px 30px; }
         header h1 { margin: 0; font-size: 2.8em; letter-spacing: 1px; }
-        .contact-links { margin-top: 20px; }
+        .availability { display: inline-block; background: var(--status); color: white; padding: 8px 18px; border-radius: 25px; font-size: 0.95em; margin-top: 15px; font-weight: bold; border: 2px solid rgba(255,255,255,0.2); }
+        .contact-links { margin-top: 25px; }
         .contact-links a { color: white; margin: 0 15px; text-decoration: none; font-size: 1.1em; transition: 0.3s; }
         .contact-links a:hover { color: var(--accent); }
 
         .section { margin: 50px 0; }
-        h2 { border-left: 5px solid var(--accent); padding-left: 15px; color: var(--primary); text-transform: uppercase; font-size: 1.5em; }
+        h2 { border-left: 5px solid var(--accent); padding-left: 15px; color: var(--primary); text-transform: uppercase; font-size: 1.4em; margin-bottom: 25px; }
 
-        /* Style des Cartes (Projets & Expériences) */
         .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; }
         .card { background: white; padding: 25px; border-radius: 12px; box-shadow: 0 10px 20px rgba(0,0,0,0.05); transition: 0.3s; display: flex; flex-direction: column; }
         .card:hover { transform: translateY(-8px); box-shadow: 0 15px 30px rgba(0,0,0,0.1); }
-        .card h3 { margin-top: 0; color: var(--accent); }
+        .card h3 { margin-top: 0; color: var(--accent); font-size: 1.3em; }
         
-        /* Tags et Badges */
         .tag { background: #ebf5ff; color: #007bff; padding: 5px 12px; border-radius: 20px; font-size: 0.8em; font-weight: 600; margin: 0 5px 8px 0; display: inline-block; }
         .course-tag { background: #f0f0f0; color: #555; border: 1px solid #ddd; }
         
-        .btn { display: inline-block; margin-top: auto; padding: 10px 20px; background: var(--accent); color: white; text-decoration: none; border-radius: 5px; text-align: center; font-weight: bold; }
+        .btn { display: inline-block; margin-top: auto; padding: 12px 20px; background: var(--accent); color: white; text-decoration: none; border-radius: 6px; text-align: center; font-weight: bold; transition: 0.3s; }
+        .btn:hover { background: #2980b9; }
         
-        .exp-item, .edu-item { background: white; padding: 20px; border-radius: 10px; margin-bottom: 20px; border-left: 3px solid #eee; }
-        .date { color: var(--accent); font-weight: bold; font-size: 0.9em; }
+        .exp-item, .edu-item { background: white; padding: 25px; border-radius: 12px; margin-bottom: 25px; border-left: 4px solid #eee; box-shadow: 0 5px 15px rgba(0,0,0,0.02); }
+        .date { color: var(--accent); font-weight: bold; font-size: 0.95em; display: block; margin-bottom: 5px; }
         ul { padding-left: 20px; }
     </style>
 </head>
@@ -41,6 +41,9 @@
 <header>
     <h1>Stevie Mobue me Efangon</h1>
     <p>Élève Ingénieur Business Intelligence & Analytics | Expert IA</p>
+    <div class="availability">
+        <i class="fas fa-search"></i> Disponible pour Stage de Fin d'Études (Dès Mai 2026)
+    </div>
     <div class="contact-links">
         <a href="mailto:stevieefangon@gmail.com"><i class="fas fa-envelope"></i> Email</a>
         <a href="https://linkedin.com/in/stevie-mobue" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
@@ -52,7 +55,39 @@
     
     <section class="section">
         <h2>Profil Professionnel</h2>
-        <p>Expert dans la transformation de données brutes en leviers décisionnels, je maîtrise le cycle complet de la donnée : de l'extraction SQL/ETL à la visualisation avancée et la modélisation Machine Learning.</p>
+        <p>Actuellement en dernière année de cycle ingénieur chez <strong>CY Tech</strong>, je me spécialise dans la valorisation des données massives et l'intelligence décisionnelle. Je recherche un <strong>stage de fin d'études de 6 mois à partir de mai 2026</strong> pour mettre mes compétences en ETL, Analytics et Machine Learning au service de projets stratégiques.</p>
+    </section>
+
+    <section class="section">
+        <h2>Projets Techniques (GitHub)</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Alteryx | Audit Financier SAP</h3>
+                <p>Automatisation du rapprochement comptable entre le Grand Livre (ACDOCA/BKPF) et la Balance Générale. Détection d'écarts et fiabilisation de clôture.</p>
+                <div style="margin-bottom:15px;">
+                    <span class="tag">Alteryx</span> <span class="tag">SAP</span> <span class="tag">Data Audit</span>
+                </div>
+                <a href="https://github.com/stevieedgar/SAP-Financial-Audit-Alteryx" class="btn" target="_blank">Voir le Projet</a>
+            </div>
+
+            <div class="card">
+                <h3>Jedox | Ecolonergie</h3>
+                <p>Déploiement d'une solution EPM pour automatiser le suivi de rentabilité financière et remplacer les processus manuels Excel.</p>
+                <div style="margin-bottom:15px;">
+                    <span class="tag">Jedox</span> <span class="tag">Business Modeling</span>
+                </div>
+                <a href="https://github.com/stevieedgar/Projet-Jedox" class="btn" target="_blank">Voir le Projet</a>
+            </div>
+
+            <div class="card">
+                <h3>Power BI | Performance Hôtelière</h3>
+                <p>Tableaux de bord dynamiques pour l'analyse de KPIs hôteliers. Modélisation de données avec DAX avancé.</p>
+                <div style="margin-bottom:15px;">
+                    <span class="tag">Power BI</span> <span class="tag">DAX</span>
+                </div>
+                <a href="https://github.com/stevieedgar/Projet-PBI-Hotels" class="btn" target="_blank">Voir le Projet</a>
+            </div>
+        </div>
     </section>
 
     <section class="section">
@@ -63,19 +98,19 @@
             <h3>Data Scientist (Stage) | Université Mohammed V</h3>
             <ul>
                 <li>Modélisation prédictive et analyse exploratoire de données complexes.</li>
-                <li>Entraînement et optimisation de modèles de Machine Learning pour la gestion des litiges.</li>
+                <li>Optimisation de modèles de Machine Learning pour la gestion des litiges.</li>
             </ul>
-            <span class="tag">Machine Learning</span> <span class="tag">Python</span> <span class="tag">Analyse Exploratoire</span>
+            <span class="tag">Machine Learning</span> <span class="tag">Python</span>
         </div>
 
         <div class="exp-item">
             <span class="date">Avril - Août 2025</span>
             <h3>Développeur Mobile (Stage) | ETS COBWEB</h3>
             <ul>
-                <li>Développement agile d'applications mobiles et intégration de flux de données via API Symfony.</li>
-                <li>Collaboration en environnement technique pour l'optimisation des performances applicatives.</li>
+                <li>Développement agile d'applications et intégration d'APIs Symfony.</li>
+                <li>Optimisation des performances et gestion des flux de données mobiles.</li>
             </ul>
-            <span class="tag">Développement Mobile</span> <span class="tag">API Symfony</span> <span class="tag">Agile</span>
+            <span class="tag">Mobile Dev</span> <span class="tag">API Symfony</span>
         </div>
     </section>
 
@@ -85,72 +120,18 @@
         <div class="edu-item">
             <span class="date">2024 - Présent</span>
             <h3>Ingénieur Business Intelligence & Analytics | CY Tech (ex-EISTI)</h3>
-            <p><strong>Axes principaux :</strong> Analyse de performance, architecture décisionnelle et reporting stratégique.</p>
-            <p><strong>Cours clés :</strong> 
+            <p>Spécialisation en architecture décisionnelle, Data Engineering et gouvernance de données.</p>
+            <p>
                 <span class="tag course-tag">Architecture ETL</span> 
-                <span class="tag course-tag">Modélisation DAX</span> 
-                <span class="tag course-tag">Data Engineering (Kafka, Spark)</span>
-                <span class="tag course-tag">Gouvernance des données</span>
+                <span class="tag course-tag">Big Data (Spark/Kafka)</span> 
+                <span class="tag course-tag">Gouvernance</span>
             </p>
         </div>
 
         <div class="edu-item">
             <span class="date">2022 - 2024</span>
             <h3>Master en Intelligence Artificielle | Université IBN Tofail</h3>
-            <p><strong>Axes principaux :</strong> Apprentissage automatique, statistiques avancées et modélisation prédictive.</p>
-            <p><strong>Cours clés :</strong> 
-                <span class="tag course-tag">Deep Learning</span> 
-                <span class="tag course-tag">Algorithmique avancée</span> 
-                <span class="tag course-tag">Probabilités & Statistiques</span>
-                <span class="tag course-tag">Scikit-learn / Pandas</span>
-            </p>
-        </div>
-
-        <div class="edu-item">
-            <span class="date">2019 - 2022</span>
-            <h3>Licence Mathématiques et Informatique | Université IBN Tofail</h3>
-            <p><strong>Focus :</strong> Formation fondamentale en logique algorithmique et outils mathématiques pour la data.</p>
-        </div>
-    </section>
-
-    <section class="section">
-        <h2>Projets Techniques (GitHub)</h2>
-        <div class="grid">
-            <div class="card">
-                <h3>Alteryx | Audit Financier SAP</h3>
-                <p>Automatisation du rapprochement comptable entre le Grand Livre (tables ACDOCA/BKPF) et la Balance Générale. Fiabilisation des données financières via ETL.</p>
-                <div style="margin-bottom:15px;">
-                    <span class="tag">Alteryx</span> <span class="tag">SAP</span> <span class="tag">Audit Data</span>
-                </div>
-                <a href="https://github.com/stevieedgar/SAP-Financial-Audit-Alteryx" class="btn" target="_blank">Dépôt GitHub</a>
-            </div>
-
-            <div class="card">
-                <h3>Jedox | Ecolonergie</h3>
-                <p>Remplacement d'un système Excel par une solution automatisée Jedox pour le suivi de la rentabilité financière.</p>
-                <div style="margin-bottom:15px;">
-                    <span class="tag">Jedox</span> <span class="tag">EPM</span>
-                </div>
-                <a href="https://github.com/stevieedgar/Projet-Jedox" class="btn" target="_blank">Dépôt GitHub</a>
-            </div>
-
-            <div class="card">
-                <h3>Power BI | Performance Hôtelière</h3>
-                <p>Création de tableaux de bord décisionnels avec calculs de KPI complexes (CA cumulé) via le langage DAX.</p>
-                <div style="margin-bottom:15px;">
-                    <span class="tag">Power BI</span> <span class="tag">DAX</span>
-                </div>
-                <a href="https://github.com/stevieedgar/Projet-PBI-Hotels" class="btn" target="_blank">Dépôt GitHub</a>
-            </div>
-
-            <div class="card">
-                <h3>SAS | Insight Toy Company</h3>
-                <p>Analyse prédictive des ventes et satisfaction client avec SAS Visual Analytics et Machine Learning.</p>
-                <div style="margin-bottom:15px;">
-                    <span class="tag">SAS</span> <span class="tag">ML</span>
-                </div>
-                <a href="https://github.com/stevieedgar/Projet-SAS" class="btn" target="_blank">Dépôt GitHub</a>
-            </div>
+            <p>Focus sur l'apprentissage profond (Deep Learning) et les statistiques avancées.</p>
         </div>
     </section>
 
